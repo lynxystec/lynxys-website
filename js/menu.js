@@ -1,7 +1,7 @@
 function goTo(route) {
   const HOST = location.origin;
 
-  if (test.startsWith('http://')) {
+  if (HOST.startsWith('http://')) {
     if (!route) {
       location.href = `${HOST}/`;
       return;
@@ -10,7 +10,7 @@ function goTo(route) {
     location.href = `${HOST}/${route}`;
   }
 
-  if (test.startsWith('https://')) {
+  if (HOST.startsWith('https://')) {
     if (!route) {
       location.href = `${HOST}/lynxys-website`;
       return;
