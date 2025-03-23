@@ -1,10 +1,10 @@
 function goTo(route) {
-  const GITHUB_PAGES_HOST = 'lynxys-website';
+  const HOST = location.origin;
 
   if (!route) {
-    location.href = `${GITHUB_PAGES_HOST}/`;
+    location.href = `${HOST}/`;
     return;
   }
 
-  location.href = `${GITHUB_PAGES_HOST}/${route}`;
+  location.href = `${HOST}/${route}`;
 }
