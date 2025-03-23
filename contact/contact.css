@@ -1,0 +1,8 @@
+.contact {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact p {
+  font-size: 2rem;
+}
