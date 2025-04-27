@@ -19,3 +19,7 @@ function goTo(route) {
     location.href = `${HOST}/lynxys-website/${route}`;
   }
 }
+
+function goToDiarioo() {
+  location.href = "https://diarioo.netlify.app/";
+}
