@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lynxys | Apps to boost your business</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/menu.js" defer></script>
-</head>
-
-<body>
-    <header>
-        <div class="header-in">
-            <h1>Lynxys</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lynxys | Apps to boost your business</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="js/menu.js" defer></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    </head>
+    <body>
+        <header>
+            <div class="header-in">
+                <h1 class="logo">Lynxys</h1>
+                <nav class="menu">
+                    <ul>
+                        <li onclick="goTo('')">Home</li>
+                        <li onclick="goTo('contact')">Contact</li>
+                        <li onclick="goToDiarioo()">Diarioo</li>
+                        <li>Goaal</li>
+                    </ul>
+                </nav>
+                <div class="menu-button" onclick="toggleModalMobile()">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-in">
+                <h1>Apps to <span class="text-blue-300">boost</span> your business</h1>
+            </div>
+        </main>
+        <footer>
+            Copyright © 2025 | Lynxys Tecnologia®
+        </footer>
+        <div class="modal-mobile" id="modal-mobile">
+            <div class="close-button" onclick="toggleModalMobile()">
+                <p>X</p>
+            </div>
             <nav>
-                <ul>
+                <ul class="menu-mobile">
                     <li onclick="goTo('')">Home</li>
                     <li onclick="goTo('contact')">Contact</li>
                     <li onclick="goToDiarioo()">Diarioo</li>
@@ -25,15 +49,5 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    <main>
-        <div class="main-in">
-            <h1>Apps to <span class="text-blue-300">boost</span> your business</h1>
-        </div>
-    </main>
-    <footer>
-        Copyright © 2025 | Lynxys Tecnologia®
-    </footer>
-</body>
-
+    </body>
 </html>

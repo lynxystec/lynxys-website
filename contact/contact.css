@@ -6,3 +6,9 @@
 .contact p {
   font-size: 2rem;
 }
+
+@media (max-width: 400px) {
+  .contact p {
+    font-size: 1rem;
+  }
+}
