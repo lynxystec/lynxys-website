@@ -20,10 +20,6 @@ function goTo(route) {
   }
 }
 
-function goToDiarioo() {
-  location.href = "https://diarioo.netlify.app/";
-}
-
 function toggleModalMobile() {
   const modalMobile = document.getElementById('modal-mobile');
   modalMobile.classList.contains('hide') ? modalMobile.classList.remove('hide') : modalMobile.classList.add('hide');

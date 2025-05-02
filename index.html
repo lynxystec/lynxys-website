@@ -4,50 +4,145 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lynxys | Apps to boost your business</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="css/index.css" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
         <script src="js/menu.js" defer></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     </head>
     <body>
-        <header>
-            <div class="header-in">
-                <h1 class="logo">Lynxys</h1>
-                <nav class="menu">
+        <div class="section header">
+            <div class="section-in header-in">
+                <h1>Lynxys</h1>
+                <nav id="menu">
                     <ul>
-                        <li onclick="goTo('')">Home</li>
-                        <li onclick="goTo('contact')">Contact</li>
-                        <li onclick="goToDiarioo()">Diarioo</li>
-                        <li>Goaal</li>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://diarioo.netlify.app/">Diarioo</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#privacy-policy">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
                     </ul>
                 </nav>
-                <div class="menu-button" onclick="toggleModalMobile()">
+                <div id="menu-button" onclick="toggleModalMobile()">
                     <span class="material-symbols-outlined">menu</span>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="main-in">
-                <h1>Apps to <span class="text-blue-300">boost</span> your business</h1>
+        </div>
+        <div class="section">
+            <div id="home" class="section-in banner">
+                <h1>Apps to <span style="color: var(--primary-color);">boost</span> your business</h1>
             </div>
-        </main>
-        <footer>
-            Copyright © 2025 | Lynxys Tecnologia®
-        </footer>
+            <div id="about" class="section-in about">
+                <h1>About <span style="color: var(--primary-color);">us</span></h1>
+                <p>At Lynxys, we specialize in building and delivering powerful, user-friendly SaaS applications designed to simplify everyday tasks and enhance business management. Whether you're an individual looking for smarter tools or a company in need of streamlined solutions, our software is built to help you work better and faster. Our mission is to create high-quality, reliable apps that solve real-world problems without the complexity. From personal productivity tools to full-scale management systems, each product is crafted with scalability, performance, and ease of use in mind. With a strong focus on innovation, customer experience, and continuous improvement, we aim to empower our user whether at home or in the offic to achieve more with less effort. Let us take care of the software, so you can focus on what matters most.</p>
+                <p>We support global payments and accept all major currencies. All our services are provided via the internet. You can request cancellation of our services at any time and without bureaucracy. Refunds can be requested within 7 days of purchase without the need to provide any justification.</p>
+            </div>
+            <div id="privacy-policy" class="section-in privacy-policy">
+                <h1>Privacy Policy</h1>
+                <p>At Lynxys, we value your privacy and are committed to protecting the personal data you share with us. This privacy policy outlines how we collect, use, store, and safeguard your information in compliance with international data protection standards.</p>
+                <p class="policy">Data Collection</p>
+                <p>We only collect the data necessary to provide our services, such as your name, email address, payment information, and usage data. This information may be provided directly by you or collected automatically through your interaction with our website and services.</p>
+                <p class="policy">Use of Data</p>
+                <p>The data we collect is used to:</p>
+                <ul>
+                    <li>- Provide and improve our services</li>
+                    <li>- Manage your account and access</li>
+                    <li>- Send relevant updates and communications</li>
+                    <li>- Fulfill legal and regulatory obligations</li>
+                </ul>
+                <p class="policy">Data Sharing</p>
+                <p>We do not sell your personal data. We may share your information with trusted service providers or partners when required to operate our platform always ensuring adequate data protection and confidentiality.</p>
+                <p class="policy">Your Rights</p>
+                <p>You have the right to access, update, correct, or request the deletion of your personal data at any time. To exercise your rights, contact us at lynxystecnologia@gmail.com.</p>
+                <p class="policy">Data Security</p>
+                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, loss, misuse, or disclosure.</p>
+                <p class="policy">Cookies</p>
+                <p>We use cookies to enhance your browsing experience. You can manage your cookie preferences directly through your browser settings.</p>
+                <p class="policy">Changes to This Policy</p>
+                <p>This policy may be updated periodically. We encourage you to review this page regularly to stay informed about how we protect your data.</p>
+                <p style="margin-top: 20px;"><i>Last update: 2025-05-01</i></p>
+            </div>
+            <div id="contact" class="section-in contact">
+                <h1>Contact <span style="color: var(--primary-color);">us</span></h1>
+                <div>
+                    <p style="margin-bottom: 10px;">You can contact us by:</p>
+                    <p><span style="font-weight: bold;">Whatsapp:</span> +55 (61) 98163-1102</p>
+                    <p><span style="font-weight: bold;">Email:</span> lynxystecnologia@gmail.com</p>
+                </div>
+                <p><span style="font-weight: bold;">Address:</span> Rua 37 Norte, Aguas Claras, Brasilia - DF, Brazil, 71919360</p>
+            </div>
+        </div>
         <div class="modal-mobile" id="modal-mobile">
             <div class="close-button" onclick="toggleModalMobile()">
                 <p>X</p>
             </div>
             <nav>
                 <ul class="menu-mobile">
-                    <li onclick="goTo('')">Home</li>
-                    <li onclick="goTo('contact')">Contact</li>
-                    <li onclick="goToDiarioo()">Diarioo</li>
-                    <li>Goaal</li>
+                    <li onclick="toggleModalMobile()">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li onclick="toggleModalMobile()">
+                        <a href="https://diarioo.netlify.app/">Diarioo</a>
+                    </li>
+                    <li onclick="toggleModalMobile()">
+                        <a href="#about">About</a>
+                    </li>
+                    <li onclick="toggleModalMobile()">
+                        <a href="#privacy-policy">Privacy</a>
+                    </li>
+                    <li onclick="toggleModalMobile()">
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </body>
+    <footer>
+        <div class="footer-div footer-div-left">
+            <p>Our social networks:</p>
+            <div class="socials-net">
+                <a href="https://shorturl.at/INRZn" target="_blank">
+                    <div class="social-net">
+                        <img src="img/linkedin.svg" alt="logo linkedin" />
+                    </div>
+                </a>
+                <a href="https://shorturl.at/MgPam" target="_blank">
+                    <div class="social-net">
+                        <img src="img/insta.png" alt="logo insta" />
+                    </div>
+                </a>
+            </div>
+            <p>Copyright © 2025 | Lynxys Tecnologia®</p>
+        </div>
+        <div class="footer-div">
+            <p>Payment methods:</p>
+            <div class="methods-logo">
+                <div class="method-logo">
+                    <img src="img/mastercard.svg" alt="logo mastercard">
+                </div>
+                <div class="method-logo">
+                    <img src="img/visa.svg" alt="logo visa">
+                </div>
+                <div class="method-logo">
+                    <img src="img/applepay.svg" alt="logo applepay">
+                </div>
+                <div class="method-logo">
+                    <img src="img/googlepay.svg" alt="logo googlepay">
+                </div>
+            </div>
+        </div>
+    </footer>
 </html>
